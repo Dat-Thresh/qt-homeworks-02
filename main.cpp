@@ -1,15 +1,11 @@
-#include "mainwindow.h"
 #include <QSqlDatabase>
-#include <QApplication>
 #include <QtNetwork>
+#include <iostream>
 
-int main(int argc, char *argv[])
+int main(int argc, char** argv)
 {
-    QApplication a(argc, argv);
-    MainWindow w;
+    QCoreApplication a(argc, argv);
     QSqlDatabase sql_db;
     QNetworkAccessManager net_accman;
-
-    w.show();
-    return a.exec();
+    return 0;
 }
